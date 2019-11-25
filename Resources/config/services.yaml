@@ -1,0 +1,10 @@
+services:
+  Ardiakov\FirstBundle\Services\CountManager:
+    autowire: true
+
+  Ardiakov\FirstBundle\Services\Counter\SimpleCalculator:
+    autowire: true
+
+  Ardiakov\FirstBundle\Services\Counter\CounterServiceInterface: '@Ardiakov\FirstBundle\Services\Counter\SimpleCalculator'
+
+
