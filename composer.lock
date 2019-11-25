@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "647816774d21b5716eeb2da97523e9cf",
+    "content-hash": "d0b1a12850b670e08792524eba22a8af",
     "packages": [
         {
             "name": "psr/container",
@@ -481,16 +481,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "0bf75c37a71ff41f718b14b9f5a0a7d6a7dd9b84"
+                "reference": "3c2c73c73a978c73fe2daddc9de6788c9fd117b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/0bf75c37a71ff41f718b14b9f5a0a7d6a7dd9b84",
-                "reference": "0bf75c37a71ff41f718b14b9f5a0a7d6a7dd9b84",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/3c2c73c73a978c73fe2daddc9de6788c9fd117b2",
+                "reference": "3c2c73c73a978c73fe2daddc9de6788c9fd117b2",
                 "shasum": ""
             },
             "require": {
@@ -500,7 +500,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -527,7 +527,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-11-21T07:02:52+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -738,7 +738,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.12.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -2688,7 +2688,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,

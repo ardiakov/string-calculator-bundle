@@ -11,10 +11,11 @@ use Ardiakov\FirstBundle\Services\Counter\Exceptions\SimpleCalculatorException;
 class SimpleCalculator implements CounterServiceInterface
 {
     /**
-     * @param string|null $string
+     * @param null|string $string
      *
-     * @return SimpleCalculatorException|int|float
      * @throws NullValueException
+     *
+     * @return float|int|SimpleCalculatorException
      */
     public function count(?string $string)
     {
@@ -38,8 +39,9 @@ class SimpleCalculator implements CounterServiceInterface
     /**
      * @param string $string
      *
-     * @return string
      * @throws NotExpectedSymbolException
+     *
+     * @return string
      */
     private function transformToReversePolishNotation(string $string): string
     {
@@ -75,10 +77,11 @@ class SimpleCalculator implements CounterServiceInterface
     }
 
     /**
-     * @param string|null $string
+     * @param null|string $string
      *
-     * @return int|float
      * @throws NotExpectedSymbolException
+     *
+     * @return float|int
      */
     private function calculate(?string $string)
     {
@@ -102,8 +105,7 @@ class SimpleCalculator implements CounterServiceInterface
         $token = strtok($string, ' ');
 
         while (false !== $token) {
-            if (array_key_exists($token, $operatorsAndOperationsMap)) {
-
+            if (\array_key_exists($token, $operatorsAndOperationsMap)) {
                 $elementB = array_pop($stack);
                 $elementA = array_pop($stack);
 

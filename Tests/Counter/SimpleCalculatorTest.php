@@ -9,9 +9,17 @@ use Ardiakov\FirstBundle\Services\Counter\Exceptions\NullValueException;
 use Ardiakov\FirstBundle\Services\Counter\SimpleCalculator;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @internal
+ */
 class SimpleCalculatorTest extends TestCase
 {
     public $service;
+
+    protected function setUp(): void
+    {
+        $this->service = new SimpleCalculator();
+    }
 
     /**
      * @dataProvider transformToReversePolishNotationDataProvider
@@ -80,17 +88,12 @@ class SimpleCalculatorTest extends TestCase
         $this->service->count(null);
     }
 
-    public function invokeMethod(&$object, $methodName, array $parameters = array())
+    public function invokeMethod(&$object, $methodName, array $parameters = [])
     {
-        $reflection = new \ReflectionClass(get_class($object));
+        $reflection = new \ReflectionClass(\get_class($object));
         $method = $reflection->getMethod($methodName);
         $method->setAccessible(true);
 
         return $method->invokeArgs($object, $parameters);
-    }
-
-    protected function setUp(): void
-    {
-        $this->service = new SimpleCalculator();
     }
 }
