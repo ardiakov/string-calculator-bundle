@@ -53,7 +53,7 @@ class SimpleCalculator implements CounterServiceInterface
             '-' => 1,
         ];
 
-        foreach (explode(" ", $string) as $index => $element) {
+        foreach (explode(' ', $string) as $index => $element) {
             if (is_numeric($element)) {
                 $out[] = $element;
             } else {
