@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class FirstExtension extends Extension
+class StringStackCalcExtension extends Extension
 {
     /**
      * {@inheritdoc}
