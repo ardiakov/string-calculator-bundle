@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Ardiakov\FirstBundle\Tests\Counter;
+namespace Ardiakov\StringStackCalcBundle\Tests\Counter;
 
-use Ardiakov\FirstBundle\Services\Counter\Exceptions\NotExpectedSymbolException;
-use Ardiakov\FirstBundle\Services\Counter\Exceptions\NullValueException;
-use Ardiakov\FirstBundle\Services\Counter\SimpleCalculator;
+use Ardiakov\StringStackCalcBundle\Services\Counter\Exceptions\NotExpectedSymbolException;
+use Ardiakov\StringStackCalcBundle\Services\Counter\Exceptions\NullValueException;
+use Ardiakov\StringStackCalcBundle\Services\Counter\SimpleCalculator;
 use PHPUnit\Framework\TestCase;
 
 /**

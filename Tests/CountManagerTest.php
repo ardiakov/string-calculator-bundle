@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ardiakov\FirstBundle\Tests;
+namespace Ardiakov\StringStackCalcBundle\Tests;
 
-use Ardiakov\FirstBundle\Services\Counter\SimpleCalculator;
-use Ardiakov\FirstBundle\Services\CountManager;
+use Ardiakov\StringStackCalcBundle\Services\Counter\SimpleCalculator;
+use Ardiakov\StringStackCalcBundle\Services\CountManager;
 use PHPUnit\Framework\TestCase;
 
 /**

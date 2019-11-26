@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": "^7.1.3",
-        "symfony/config": "^3.4 || ^4.0",
         "symfony/dependency-injection": "^3.4 || ^4.0",
+        "symfony/config": "^3.4 || ^4.0",
         "symfony/http-kernel": "^3.4 || ^4.0"
     },
     "require-dev": {
@@ -20,21 +20,17 @@
         "symfony/phpunit-bridge": "^3.4|^4.0",
         "symfony/var-dumper": "~3.4|~4.0"
     },
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Ardiakov\\FirstBundle\\": ""
-        },
-        "exclude-from-classmap": [
-            "vendor/phpunit"
-        ]
+            "Ardiakov\\StringStackCalcBundle\\": ""
+        }
     },
     "config": {
         "sort-packages": true
     },
     "autoload-dev": {
         "psr-4": {
-            "ardiakov\\MathTransformationBundle\\Tests\\": "tests"
+            "Ardiakov\\StringStackCalcBundle\\Tests\\": "tests"
         }
     }
 }

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Ardiakov\FirstBundle\Services\Counter;
+namespace Ardiakov\StringStackCalcBundle\Services\Counter;
 
-use Ardiakov\FirstBundle\Services\Counter\Exceptions\NotExpectedSymbolException;
-use Ardiakov\FirstBundle\Services\Counter\Exceptions\NullValueException;
-use Ardiakov\FirstBundle\Services\Counter\Exceptions\SimpleCalculatorException;
+use Ardiakov\StringStackCalcBundle\Services\Counter\Exceptions\NotExpectedSymbolException;
+use Ardiakov\StringStackCalcBundle\Services\Counter\Exceptions\NullValueException;
+use Ardiakov\StringStackCalcBundle\Services\Counter\Exceptions\SimpleCalculatorException;
 
 class SimpleCalculator implements CounterServiceInterface
 {

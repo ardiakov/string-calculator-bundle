@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ardiakov\FirstBundle\DependencyInjection;
+namespace Ardiakov\StringStackCalcBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

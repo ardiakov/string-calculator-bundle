@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ardiakov\FirstBundle\Services;
+namespace Ardiakov\StringStackCalcBundle\Services;
 
-use Ardiakov\FirstBundle\Services\Counter\CounterServiceInterface;
+use Ardiakov\StringStackCalcBundle\Services\Counter\CounterServiceInterface;
 
 final class CountManager
 {

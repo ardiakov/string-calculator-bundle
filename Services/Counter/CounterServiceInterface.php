@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ardiakov\FirstBundle\Services\Counter;
+namespace Ardiakov\StringStackCalcBundle\Services\Counter;
 
 interface CounterServiceInterface
 {
