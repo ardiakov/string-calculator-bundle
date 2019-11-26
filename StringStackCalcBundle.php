@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ardiakov\FirstBundle;
+namespace Ardiakov\StringStackCalcBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
